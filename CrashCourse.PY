@@ -67,3 +67,54 @@ print(end + "\n") # print(end + "\n") new line in code
 print(math.sqrt(14))
 print(math.ceil(3.1))
 print(math.floor(2.3))
+print(math.pow(2, 4))
+
+# CONDITIONALS
+# if elif else
+t = True
+f = False
+if f: 
+    print("Reached the first condition")
+elif t:
+    print("Reached second condition")
+else: 
+    print("Reached else")
+if 1 > 1 and 1==78: 
+    print("Reached the first condition")
+elif 6 == 7 or 2 != 2 or 5 == 23:
+    print("Reached second condition")
+elif 9 == 10 and 20 + 10 == 30:
+    print("Reached third condition")
+else: 
+    print("Reached else")
+
+    #Lists
+    # A list can hold any type, and can grow or shrink at any time.
+   #Index:  0   1  2 3  4
+    nums = [34,52,3,64,32]
+    print(nums)
+    print(nums[2])
+    print(nums[0])
+    print(nums[4])
+    numb = [6,7]
+    print(numb[0])
+    print(numb[1])
+    print(nums[1] + nums [2])
+    nums[0] = 64
+    print(nums[0])
+
+    #LIST METHODS
+    #Special built-in methods
+
+    words = []
+    words.append("Word 1")
+    words.append("Word 2")
+    words.append("Word 3")
+    print(words)
+
+    words.remove("Word 1")
+    words.insert(0,"Word 4")
+    words[1] = "Word 5"
+    length = len(words)
+    print(words)
+    print(length)
