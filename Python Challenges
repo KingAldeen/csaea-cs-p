@@ -1,0 +1,98 @@
+import math
+bill = 50
+
+tip = bill * 2 / 10
+
+print(tip)
+
+students = 23
+slices_per_student = 2
+slices_per_pizza = 8
+ 
+Amount_Of_Slices_Needed = students * slices_per_student
+print(Amount_Of_Slices_Needed)
+
+a = ("Order")
+c = ("Pizzas")
+Pizza_Needed_To_Buy = Amount_Of_Slices_Needed / slices_per_pizza
+print(math.ceil(Pizza_Needed_To_Buy))
+print(a,math.ceil(Pizza_Needed_To_Buy),c)
+extra = (math.ceil(Pizza_Needed_To_Buy) * slices_per_pizza) - Amount_Of_Slices_Needed 
+print(extra)
+print(extra,"slices")
+
+score = 84
+if score >= 90 and score <= 100:
+    print("A")
+elif score >= 80 and score <= 90:
+    print("B")
+elif score >= 70 and score <= 80:
+    print("C")
+elif score >= 60 and score <= 70:
+    print("D")
+else:
+    print("F")
+
+password = "csaea2026" 
+attempt = "csaea2026"
+
+if password == attempt:
+    print("Access Granted")
+else:
+    print("Access Denied")
+print(password)
+
+first = " Ada "
+last = "Lovelace "
+school = " CSAEA "
+ 
+Name = first + last +("from") + school
+print("Hello, my name is" + Name)
+
+speed_limit = 71
+speed = 71
+speeding = speed - speed_limit
+if speeding <= 0:
+    print ("Your free to go")
+elif 1 <= speeding <= 10:
+    print("Warning")
+elif 11 <= speeding <= 20:
+    print ("Fine 100")
+else:
+    print ("Fine 200")
+
+minutes_parked = 50
+block_length = 15
+cost_per_block = 1
+ 
+
+how_many_blocks = minutes_parked / block_length
+Full_Cost = (math.ceil(how_many_blocks)*cost_per_block)
+a = "You"
+b = "Owe"
+c = "Dollars"
+print(a,b,Full_Cost,c)
+
+area = 49
+side = math.sqrt(area)
+fence = side * 4
+print("Fencing Needed", fence, "Feet")
+
+scores = [340, 1250, 980, 1510, 720]
+high_score = scores[0]
+for score in scores:
+    if score > high_score:
+        high_score = score
+
+print("high_score:", high_score)
+
+savings = 0
+weekly_deposit = 15
+goal = 100
+weeks = 0
+
+while savings < goal:
+    savings += weekly_deposit
+    weeks += 1
+    print("Weeks:", weeks)
+    print("Saved: $", savings)

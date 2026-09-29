@@ -1,4 +1,4 @@
-import math
+
 # Comment
 # Comment
 # Comment
@@ -152,5 +152,3 @@ print(range(5))
 x=5
 while x < 10:
     print(x)
-    x += 1
-    
