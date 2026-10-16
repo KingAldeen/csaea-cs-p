@@ -61,6 +61,41 @@
 # Enter your last name: Lovelace
 # Formatted name: Lovelace, Ada
 
-first_name = input("Enter your first name: ")
-last_name = input("Enter your last name: ")
-print(f"Formatted name: {last_name}, {first_name}")
+# first_name = input("Enter your first name: ")
+# last_name = input("Enter your last name: ")
+# print(f"Formatted name: {last_name}, {first_name}")
+
+character = "spOngEbOB SQuArPaNts"
+print("\nLowercase:", character.lower())
+print("Uppercase:", character.upper())
+print("Capitalize first letter:", character.capitalize())
+print("Title format:", character.title())
+
+print()
+
+#find and replace text
+sentence = "I'm a goofy goober."
+new_sentence = sentence.replace("I'm", "You're")
+print(sentence)
+print(new_sentence)
+
+#JOIN AND SPLIT
+groceries = "milk,eggs,bread,butter,peanuts"
+print("\nOriginal string: ", groceries)
+
+# Split the string into a Python list, based on a 'delimiter'
+# Split the string into a Python list, based on a 'delimiter'
+items = groceries.split(",")
+print(items)
+
+# Join a python list back into a string
+joined = " and ".join(items)
+print(joined)
+
+print(type(items))
+print(type(joined))
+
+word = input("Enter Any word: ")
+print("Lowercase:", word.lower())
+print("Uppercase:", word.upper())
+print("In Reverse:", word[::-1])
